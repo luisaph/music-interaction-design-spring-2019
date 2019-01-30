@@ -1,0 +1,8 @@
+# Site settings
+title: Music Interaction Design
+description: ""
+baseurl: "/music-interaction-design-spring-2019/"
+url: ""
+permalink: /:categories/:title
+exclude: [Gemfile, Gemfile.lock]
+include: [units]
