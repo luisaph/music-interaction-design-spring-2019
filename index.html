@@ -276,25 +276,142 @@ title: Music Interaction Design
 		</div>
 	</div>
 </div>
+<div class="row">
+	<div class="span8">
+		<a name="MusicII"></a> 
+		<h3>Tools: Music + Creative Computing</h3>
+		<div class="row">
+			<div class="span2">
+				<h4>Class Meeting</h4>
+			</div>
+			<div class="span6">
+				<p>Project updates: Tawania, Matthew, Yves, Kemi, Xiaotong, Nianqi, Chenhe</p>
+				<p>Discussion: a map of available tools</p>
+				<p>Applications: Art Installations. Guest speaker: <a href="">Lea Bertucci</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span2">
+				<h4>Resources</h4>
 
+			</div>
+			<div class="span6">
+				<p>
+				<ul>
+					<li>Ableton Live + 
+						<ul>
+							<li>Control via <a href="http://www.indiana.edu/~emusic/361/midi.htm">MIDI</a></li>
+								<ul>	
+									<li>Commercial physical controllers</li>
+									<li>Custom physical controllers: Teensy, Arduino, in particular MKRZERO (see example MIDIUSB/write). But also Arduino Uno (tutorial <a href="https://www.arduino.cc/en/tutorial/midi">here</a>)</li>
+									<li>Custom digital controllers: 
+										<ul>
+											<li>Web-based: via <a href="https://webaudio.github.io/web-midi-api/
+">Web MIDI</a>; see also <a href="https://github.com/djipco/webmidi">this simplified library</a>. Here is <a href="https://editor.p5js.org/luisa/sketches/XQHrEkbFg">an example in p5</a>.</li>
+											<li>Most creative coding frameworks have MIDI libraries</li>
+										</ul>	
+									<li>Useful tools: 
+										<ul>
+											<li><a href="https://www.snoize.com/MIDIMonitor/">MIDI Monitor</a></li>
+											<li><a href="https://help.ableton.com/hc/en-us/articles/209774225-Using-virtual-MIDI-buses">Instructions for enabling the IAC driver</a></li>
+											<li>simple General MIDI players: <a href="https://www.videolan.org/vlc/releases/3.0.0.html">VLC 3</a>, synths like <a href="http://notahat.com/simplesynth/">this one</a></li>
+										</ul>
+								</ul>
+							<li>Control via <a href="http://opensoundcontrol.org/introduction-osc">OSC</a></li>
+								<ul>
+									<li>Most creative coding frameworks have OSC libraries:
+										<ul>
+											<li>Arduino and Teensy: <a href="https://github.com/CNMAT/OSC">CNMAT library</a></li>
+											<li>p5.js: <a href="https://github.com/genekogan/p5js-osc">p5js-osc</a></li>
+											<li>Node.js: <a href="https://github.com/colinbdclark/osc.js/tree/master">osc.js</a></li>
+											<li>Processing: <a href="http://www.sojamo.de/libraries/oscP5/">OscP5</a></li>
+											<li>OpenFrameworks: <a href="https://openframeworks.cc/documentation/ofxOsc/">ofxOsc</a></li>
+											<li>Max: <a href="https://cnmat.berkeley.edu/downloads">CNMAT externals</a></li>
+										</ul>
+									</li>
+									<li>You also need an intermediary between the system sending OSC messages and Live. This can be your own (for example a Max patch, a Processing app, or something like <a href="https://github.com/stufisher/LiveOSC2">LiveOSC</a>) <!-- (see code examples <a href="https://www.npmjs.com/package/liveosc">here</a>) --></li>
+								</ul>
+							<li>Useful tools: <a href="https://www.ableton.com/en/packs/connection-kit/">Live Connection Kit</a>, in particular the OSC Monitor</li>
+						</li>
+							<li>Control via Live API</li>
+								<ul>
+									<li>Max for Live</li>
+									<ul>
+										<li><a href="https://docs.cycling74.com/max6/dynamic/c74_docs.html#live_api_overview">Live API Overview</a>, <a href="https://docs.cycling74.com/max6/dynamic/c74_docs.html#live_object_model">Live Object Model</a></li>
+										<li>Visual programming: <a href="https://help.ableton.com/hc/en-us/articles/209071389-Controlling-Live-using-Max-for-Live-Tutorial-"> Text tutorial</a>, a <a href="https://cycling74.com/tutorials/programming-in-max-for-live-video-series">video tutorial series</a></li>
+										<li>Javascript programming: <a href="https://docs.cycling74.com/max7/vignettes/jsliveapi">JS Live API reference</a>, <a href="http://compusition.com/writings/js-live-api-midi-clips-reading">a tutorial</a>, general <a href="https://docs.cycling74.com/max7/vignettes/javascriptinmax">javascript in Max reference</a></li>
+										<li>General Max programming: <a href="https://docs.cycling74.com/max7/">Max Documentation</a>, <a href="https://docs.cycling74.com/max7/">Guides</a> </li>
+									</ul>
+									<!-- <li>There is also a Python API, and <a href="http://ableton.github.io/">more tools</a></li> -->
+								</ul>
+						</ul>
+						</li>
+						<li>Custom Standalone Systems: Max/MSP, Chuck, SuperCollider, and other programming languages and frameworks. Using Web Audio: <a href="https://tonejs.github.io/">Tone.js.</a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span2">
+				<h4>Assignments</h4>
+			</div>
+			<div class="span6">
+				<p>1. Midterm project: build a functional prototype of your project</p>
+				<p>2. Prepare a 5 - 8 minute presentation, including: 
+					<ul>
+						<li>Concept. In one or two sentences, what is your project? Why did you choose this project? Is it expressive / needed / entertaining / intriguing / provocative?</li>
+						<li>Demo. Perform your piece for the class, or have a classmate perform it. Do this live, but have a backup video.</li>
+						<li>Technology. Briefly, how does it work? Mention the main techniques and components you used.</li>
+						<li>Future work / next steps</li>
+					</ul>
+				</p>
+				<p>3. Post your blogpost and presentation <a href="">here</a>.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <p>Discussion + activity: Scores and Time</p> -->
+				<!-- <p>Tutorials:
+					<ul>
+						<li>Controlling the Live Object Model from Max</li>
+						<li>Creating a sequencer in Tone.js</li>
+					</ul>
+				</p> -->
 <div class="row">
 	<div class="span8">
 		<a name="Resources"></a> 
 		<h3>Resources</h3>
 	<div class="row">
 		<div class="span2">
-			Books 
+			Books and Papers
 		</div>
 		<div class="span6">
 			<p>In no particular order: 
 				<ul>
+					<li>An Alternative to a Standard Taxonomy for Electronic and Computer Instruments, by Laurie Spiegel</li>
 					<li>The Rest is Noise, by Alex Ross</li>
+					<li>Deep Listening, by Pauline Oliveros</li>
 					<li>Making Music: Creative Strategies for Electronic Music Producers, by Dennis DeSantis</li>
+					<li>Music as Mirror of Mind, by Laurie Spiegel</li>
 					<li>A Geometry of Music, by Dmitri Tymoczko</li>
 					<li>The Computer Music Tutorial, by Curtis Roads</li>
 					<li>Make:Analog Synthesizers, by Ray Wilson</li>
 					<li>The Design of Everyday Things, by Don Norman</li>
 					<li>Designing Interactions, by Bill Moggridge</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span2">
+			Papers 
+		</div>
+		<div class="span6">
+			
+				<ul>
+					
+					
 				</ul>
 			</p>
 		</div>
